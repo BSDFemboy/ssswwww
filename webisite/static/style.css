@@ -1,0 +1,103 @@
+html {
+	background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("img/bg.webp") fixed center;
+}
+
+body {
+	max-width: 900px;
+  	background: linear-gradient(rgba(80, 62, 84, 0.80), rgba(80, 62, 84, 0.80));
+  	font-family: Alkhemikal, Arial, Helvetica , sans-serif; 
+  	font-size: 24px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 5px;
+  	margin-bottom: 5px;
+  	padding: 4px 4px 4px 4px;
+  	text-align: center;
+  	vertical-align: middle;
+  	border-radius: 4px;
+  	color: #c246f7;
+}
+
+h1 {
+	font-family: IBM;
+	font-size: 38px;
+}
+
+.titleimg {
+  max-width: 619px;
+  max-height: 161.5px;
+}
+
+.titleimg:hover {
+	animation-name: hue;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-delay: 5s;
+}
+
+.minihr {
+	max-width: 75%
+}
+
+a {
+	color: red;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: overline;
+}
+
+.toplist a {
+	padding: 2px 2px 2px 2px;
+}
+
+#welcometext {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.tinyhr {
+	max-width: 25%;
+	padding-top: 0;
+	margin-top: 0;
+	color: #c246f7;
+}
+
+::-moz-selection {
+	color: orange;
+	background: black;
+}
+
+::selection {
+	color: orange;
+	background: black;
+}
+
+/* ANIMATIONS */
+
+@keyframes hue {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
+/* FONTS */
+
+@font-face {
+	font-family: Alkhemikal;
+	src: url("fonts/Alkhemikal.ttf");
+}
+
+@font-face {
+	font-family: IBM;
+	src: url("fonts/IBM-Logo.ttf")
+}
